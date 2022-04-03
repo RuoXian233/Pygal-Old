@@ -1,0 +1,19 @@
+<Pygal>
+    <head>
+        <start>
+            <parameter name="resizable" value="true"/>
+            <parameter name="resource" value="./assets/resources.config"/>
+            <parameter name="dynamicRender" value="false"/>
+            <parameter name="title" value="Hello"/>
+        </start>
+
+        <author>Ruoxian</author>
+        <version>1.0</version>
+    </head>
+
+    <body>
+        <scene>[scene=./assets/Scene/1.scene.json]</scene>
+        <scene>[scene=./assets/Scene/2.scene.json]</scene>
+        <scene>[scene=./assets/Scene/3.scene.json]</scene>
+    </body>
+</Pygal>

@@ -1,0 +1,76 @@
+Old Pygal Engine Functions:
+    1. Main Menu
+        1. Start & Quit
+        2. Main Menu Bgm
+        3. Main Menu Background Image
+    2. Buttons
+        1. Hover Effect
+        2. Click Events
+        3. Style Configuration
+            1. Font
+            2. Size & Position
+            3. Colors
+    3. Fade Effects
+        1. Fade In
+        2. Fade Out
+        3. Speed & Strength Control
+    4. Scene change & jump
+        1. Background
+            1. Auto resize
+        2. Sprite
+        3. Text
+            1. Text Color
+        4. ID
+            1. ID Color
+            2. Changeable field length
+        5. Bgm
+    5. Choice
+        1. Custom jump event
+        2. Changeable length
+        3. Almost centre layout
+    6. Script
+        1. Game Meta Info
+        2. Args Loader
+        3. Exception Handler
+        4. Pre-loading method
+    7. Auto controls & elements fit & resize
+
+Other Engine:
+    1. Save & Load
+        1. Better UI
+            1. Screen Shot
+            2. In-Game Trigger Button
+        2. Binary saves file
+
+    2. More beautiful UI & Controls
+    3. Line-separator support
+    4. No animation
+    5. No main Menu
+    6. Better scirpt loader Engine
+
+Refactor New Pygal Engine:
+    1. Use Qt | Tkinter as the UI Framework:
+        1. May be simple for easy developing. (No animation & No effect)
+        2. Simply add controls like Button, InputBox, list, images...
+        3. Tkinter is too simple with too few functions of visule effect
+        4. Qt is able to add complex animation & style, But it's too big, heavy with so much bugs.
+    2. Use Pygame as render engine:
+        1. Will be difficult to solve UI problems:
+            1. Image size, window resize, Animation will be free to add but difficult to calculate coordinates and other parameters.
+            2. No UI controls (even Button) provided. We should handle click event ourselves and create a Control class contains controls.
+            3. A very different way to show your window: Draw & update
+
+    So we have two versions: Tkinter & Pygame
+
+Pygal renderer:
+    Pygal.run() ->
+        Pygal.renderer.renderAll(*args) ->
+            *SceneList.render() ->
+                ButtonUI.render() ->
+                    Font.__render()
+                    Rect.__render()
+                    Image.__render()
+                TextUI.render() ->
+                    Rect.render()
+                    Font.render()
+                    Text.render()

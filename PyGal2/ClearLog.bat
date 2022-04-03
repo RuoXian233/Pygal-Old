@@ -1,0 +1,1 @@
+dir "./game_logs/" & del "./game_logs/"

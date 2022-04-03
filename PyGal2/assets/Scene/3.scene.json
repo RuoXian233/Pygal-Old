@@ -1,0 +1,16 @@
+{
+    "scene-id": 3,
+    "scene": {
+        "name": "",
+        "text": "下面开始学习如何开发吧!",
+        "background-image": "~Background/H4.png",
+        "bgm": "~1-22.ogg",
+        "sprite": null,
+        "sprite-animation": null,
+        "choices": {
+
+        },
+        "name-color": [255, 255, 255],
+        "text-color": [255, 255, 255]
+    }
+}
