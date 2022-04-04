@@ -1,8 +1,10 @@
-import Engine
+import game
 
-def main():
-    game = Engine.Pygal('./assets/Main.script.xml')
-    game.run()
+w = game.Window()
+bg = game.Image(w, './assets/Img/Background/H3.png', (0, 0))
+w.add(bg)
+g = game.Game(w)
+g.start()
 
-if __name__ == '__main__':
-    main()
+while True:
+    g.update()

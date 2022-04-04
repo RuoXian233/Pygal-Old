@@ -36,7 +36,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Engine.py" />
-    <Compile Include="main.py" />
+    <Compile Include="Game.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pygal.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\" />
